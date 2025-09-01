@@ -34,7 +34,7 @@ const achievements = [
 
 const Metrics = () => {
     return (
-        <section className="py-10 px-4 w-full">
+        <section className="bg-[url('/spray.JPG')] w-full py-10 bg-cover bg-center">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8">
                 {
                     achievements.map((achievement, index) => {
@@ -46,12 +46,10 @@ const Metrics = () => {
                                     animateToNumber={parseInt(achievement.value)} 
                                     fontStyle={{fontSize: 40, fontWeight: 'bold', color: '#22c55e'}}
                                     transitions={(index) => ({
-                                    
                                         type: "spring",
                                         duration: 1.9,
                                         bounce: 0.3,
                                         delay: index * 0.2
-
                                     })}
                                 />
                                 {achievement.postfix}
