@@ -68,7 +68,7 @@ const CardData = [
 
 const Pricing = () => {
   return (
-    <section className="py-10 px-4 w-full text-center">
+    <section className="py-14 mt-6 px-8 w-full text-center">
       <div>
         <div>
           <div className="pb-12 flex items-center justify-center flex-col">

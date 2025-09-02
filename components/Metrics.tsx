@@ -34,7 +34,7 @@ const achievements = [
 
 const Metrics = () => {
     return (
-        <section className="bg-[url('/spray.JPG')] w-full py-10 bg-cover bg-center">
+        <section className="bg-[url('/spray.JPG')] w-full py-14 mt-6 px-8 bg-cover bg-center">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8">
                 {
                     achievements.map((achievement, index) => {

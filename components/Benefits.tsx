@@ -30,7 +30,7 @@ const cardData = [
 
 const Benefits = () => {
 	return (
-		<section className="w-full bg-gray-100/50 py-10 px-4">
+		<section className="w-full bg-gray-100/50 py-14 mt-6 px-8">
 			<div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 items-center">
 				{/* Text Section */}
 				<div className="max-w-lg w-full">

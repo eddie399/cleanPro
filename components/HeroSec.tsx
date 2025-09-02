@@ -9,7 +9,7 @@ const HeroSec = () => {
         <h1 className="font-bold text-2xl lg:text-6xl mb-4">
           The Best Cleaning Service in Malawi
         </h1>
-        <p className="text-sm lg:text-lg mb-8 max-w-xl mx-auto">
+        <p className="text-sm lg:text-lg mb-8 max-w-xl px-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
           dolor sit amet consectetur adipisicing elit. Modi, culpa! Maiores,
           accusantium.

@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <footer className="bg-[#212121] text-white py-6 mt-10 px-4 text-center items-center justify-center">
             <form className="flex flex-col items-center">
-                <div className="relative w-full max-w-md">
+                <div className="relative w-[300px] lg:w-full max-w-md">
                     <input 
                         className=" bg-black rounded-full h-10 px-4 py-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 w-full"
                         type="email" name="Email" id="email" placeholder="Email" 
@@ -17,7 +17,7 @@ const Footer = () => {
                     </button>
                 </div>
             </form>
-            <div className="container mx-auto px-4 text-center mt-4">
+            <div className="container mx-auto px-8 text-center mt-4">
                 <p>&copy; 2025 ShinySpaces. All rights reserved.</p>
                 <div className="flex justify-center space-x-4 mt-2 mb-2 text-gray-400">
                     <FaFacebook className=""/>

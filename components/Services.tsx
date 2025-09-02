@@ -46,7 +46,7 @@ const cardData = [
 
 const Services = () => {
     return (
-        <section>
+        <section className="py-14 mt-6 px-8">
             <div className="text-center py-10 px-4">
                 <div>
                     <h2 className="text-green-500 font-bold pb-2 text-medium">Our Services</h2>

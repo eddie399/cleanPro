@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const About = () => {
     return(
-        <section className="py-10 px-4">
+        <section className="py-14 mt-6 px-8">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
                 <div className="">
                 <div>

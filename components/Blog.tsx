@@ -21,7 +21,7 @@ const BlogData = [
 
 const Blog = () => {
 	return (
-		<section className="py-10 px-4 w-full">
+		<section className="py-14 mt-6 px-8 w-full">
 			<div>
 				{/* Header */}
 				<div className="text-left">
