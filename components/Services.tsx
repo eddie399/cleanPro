@@ -1,11 +1,11 @@
-import { ShieldCheckIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
+import { CheckBadgeIcon, ClockIcon, ShieldCheckIcon, SquaresPlusIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/outline";
 
 
 
 const cardData = [
     {
         icon: <WrenchScrewdriverIcon className="w-12 h-12" />,
-        title: "Satisfaction Guarantee",
+        title: "All Equipment Provided",
         desc: [ 
             "We ensure every job meets your expectations.",
                 
@@ -14,8 +14,8 @@ const cardData = [
     },
 
     {
-        icon: <ShieldCheckIcon className="w-12 h-12" />,
-        title: "Satisfaction Guarantee",
+        icon: <SquaresPlusIcon className="w-12 h-12" />,
+        title: "Highly Trained Staff",
         desc: [ 
             "We ensure every job meets your expectations.",
                 
@@ -24,8 +24,8 @@ const cardData = [
     },
 
      {
-        icon: <ShieldCheckIcon className="w-12 h-12" />,
-        title: "Satisfaction Guarantee",
+        icon: <CheckBadgeIcon className="w-12 h-12" />,
+        title: "Insured Services",
         desc: [ 
             "We ensure every job meets your expectations.",
                 
@@ -33,8 +33,8 @@ const cardData = [
         ],
     },
     {
-        icon: <ShieldCheckIcon className="w-12 h-12" />,
-        title: "Satisfaction Guarantee",
+        icon: <ClockIcon className="w-12 h-12" />,
+        title: "Time Management",
         desc: [ 
             "We ensure every job meets your expectations.",
                 

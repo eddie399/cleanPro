@@ -1,4 +1,5 @@
 "use client";
+import { SparklesIcon } from "@heroicons/react/24/outline";
 import {useEffect, useState} from "react";
 
 
@@ -23,11 +24,11 @@ const Navbar: React.FC = () => {
 
 
   return (
-    <nav className="bg-white shadow-md relative">
+    <nav className=" shadow-md relative bg-white">
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo / Brand */}
         <div className="flex items-center">
-          <span className="text-2xl font-bold text-green-600">CleanPro</span>
+          <span className="text-2xl font-bold text-green-600 italic">ShinySpaces <SparklesIcon className="inline-block h-8 w-8 -ml-2 text-green-800" /> </span> 
         </div>
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-8">

@@ -1,30 +1,31 @@
 import Link from "next/link";
-import { ShieldCheckIcon } from "@heroicons/react/24/solid";
+
+import { CreditCardIcon, PercentBadgeIcon, ShieldExclamationIcon, TrashIcon } from "@heroicons/react/24/outline";
 
 const cardData = [
 	{
-		icon: <ShieldCheckIcon className="w-12 h-12" />,
+		icon: <ShieldExclamationIcon className="w-12 h-12" />,
 		title: "Satisfaction Guarantee",
 		desc: [ 
-            "We ensure every job meets your expectations.",
+            "We ensure every job meets your expectations.Book cleaning at your convenience.",
                 
             "We ensure every job meets your expectations."
         ],
 	},
 	{
-		icon: <ShieldCheckIcon className="w-12 h-12" />,
-		title: "Eco-Friendly Products",
-		desc: "Safe for your family and the environment.",
+		icon: <CreditCardIcon className="w-12 h-12" />,
+		title: "Secure Payments",
+		desc: "Safe for your family and the environment.Book cleaning at your convenience.Book cleaning at your convenience.",
 	},
 	{
-		icon: <ShieldCheckIcon className="w-12 h-12" />,
-		title: "Trusted Professionals",
-		desc: "Experienced and background-checked staff.",
+		icon: <TrashIcon className="w-12 h-12" />,
+		title: "Clean & Friendly",
+		desc: "Experienced and background-checked staff.Book cleaning at your convenience.",
 	},
 	{
-		icon: <ShieldCheckIcon className="w-12 h-12" />,
-		title: "Flexible Scheduling",
-		desc: "Book cleaning at your convenience.",
+		icon: <PercentBadgeIcon className="w-12 h-12" />,
+		title: "Always Discount",
+		desc: "Book cleaning at your convenience.Book cleaning at your convenience.",
 	},
 ];
 
@@ -57,7 +58,7 @@ const Benefits = () => {
 					</div>
 				</div>
 				{/* Cards Section */}
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-md w-full mx-auto">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md w-full mx-auto">
 					{cardData.map((card, idx) => (
 						<div
 							key={idx}
