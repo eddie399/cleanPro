@@ -33,35 +33,41 @@ const achievements = [
 ]
 
 const Metrics = () => {
-    return (
-        <section className="bg-[url('/spray.JPG')] w-full py-14 mt-6 px-8 bg-cover bg-center">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8">
-                {
-                    achievements.map((achievement, index) => {
-                       return (
-                        <div key={index} className="text-center pb-8 md:pb-0">
-                            <h2 className="text-4xl font-bold text-[#22c55e] flex items-center justify-center">
-                                <AnimatedNumbers 
-                                    useThousandsSeparator 
-                                    animateToNumber={parseInt(achievement.value)} 
-                                    fontStyle={{fontSize: 40, fontWeight: 'bold', color: '#22c55e'}}
-                                    transitions={(index) => ({
-                                        type: "spring",
-                                        duration: 1.9,
-                                        bounce: 0.3,
-                                        delay: index * 0.2
-                                    })}
-                                />
-                                {achievement.postfix}
-                            </h2>
-                            <p className="text-gray-600">{achievement.metrics}</p>
-                        </div>
-                       ) 
-                    })        
-                }    
+  return (
+    <section className="relative bg-[url('/spray.JPG')] w-full py-14 mt-6 px-8 bg-cover bg-center">
+      {/* Background Overlay */}
+      <div className="absolute inset-0 bg-blue-950/65 z-0"></div>
+
+      {/* Content */}
+      <div className="relative grid grid-cols-1 md:grid-cols-4 gap-4 lg:gap-8 z-10">
+        {achievements.map((achievement, index) => {
+          return (
+            <div key={index} className="text-center pb-8 md:pb-0">
+              <h2 className="text-4xl font-bold text-[#22c55e] flex items-center justify-center">
+                <AnimatedNumbers
+                  useThousandsSeparator
+                  animateToNumber={parseInt(achievement.value)}
+                  fontStyle={{
+                    fontSize: 40,
+                    fontWeight: "bold",
+                    color: "#22c55e",
+                  }}
+                  transitions={(index) => ({
+                    type: "spring",
+                    duration: 1.9,
+                    bounce: 0.3,
+                    delay: index * 0.2,
+                  })}
+                />
+                {achievement.postfix}
+              </h2>
+              <p className="text-white">{achievement.metrics}</p>
             </div>
-        </section>
-    )
-}
+          );
+        })}
+      </div>
+    </section>
+  );
+};
 
 export default Metrics;

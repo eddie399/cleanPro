@@ -31,7 +31,7 @@ const cardData = [
 
 const Testimonials = () => {
 	return (
-		<section className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-14 mt-6 px-8">
+		<section className="max-w-7xl mx-auto sm:px-6 lg:px-8 py-14 mt-6 px-8 bg-gray-200/70 rounded-tl-full">
 			<div>
 				{/* Header */}
 				<div className="py-8 flex items-center">
