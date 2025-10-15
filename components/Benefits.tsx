@@ -31,7 +31,7 @@ const cardData = [
 
 const Benefits = () => {
 	return (
-		<section className="w-full bg-gray-100/50 py-14 mt-6 px-8">
+		<section className="w-full bg-gray-100/50 py-14  mt-6 px-2">
 			<div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-8 items-center">
 				{/* Text Section */}
 				<div className="max-w-lg w-full">
@@ -58,11 +58,11 @@ const Benefits = () => {
 					</div>
 				</div>
 				{/* Cards Section */}
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md w-full mx-auto">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-md w-full lg:w-full mx-auto">
 					{cardData.map((card, idx) => (
 						<div
 							key={idx}
-							className="group bg-white p-4 rounded-lg shadow-md flex flex-row items-center text-left hover:bg-green-500 cursor-pointer transition-colors"
+							className="group bg-white p-4 lg:px-8 rounded-lg shadow-md flex-row items-center text-left hover:bg-green-500 cursor-pointer transition-colors"
 						>
 							<div className="mr-4 text-green-500 group-hover:text-white transition-colors">
 								{card.icon}
